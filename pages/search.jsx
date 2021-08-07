@@ -14,10 +14,10 @@ const Search = ({searchResult}) => {
     return ( 
         <div>
             <Header placeholder={`${location} | ${range} |${numberOfGuest}`}/>
-            <main className="flex">
+            <main className="grid-cols-1 md:flex">
                 <section className="flex-grow pt-14 px-6" >  
                     <p className="text-xs">300+ Stays {range} in {location} for {numberOfGuest} guests</p>
-                    <h1 className="text-3xl font-semibold mt-2 mb-6">Stay in Mars</h1>
+                    <h1 className="text-3xl font-semibold mt-2 mb-6">Stay in <span className="text-red-400">{location}</span></h1>
                     <div className="hidden lg:inline-flex mb-5 space-x-3 text-gray-800 whitespace-nowrap">
                         <p className="button">Cancellation Flexibility</p>
                         <p className="button">Type of Place</p>
@@ -40,7 +40,7 @@ const Search = ({searchResult}) => {
                         
                     </div>
                 </section>
-                <section class="hidden xl:inline-flex xl:min-w-[600px]">
+                <section class="flex-grow pt-14 px-6 xl:inline-flex xl:min-w-[600px]">
                     <Map searchResult={searchResult} />
                 </section>
             </main>
