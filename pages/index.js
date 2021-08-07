@@ -40,7 +40,7 @@ export default function Home({exploreData, cardsData}) {
         </section>
         <section>
           <LargeCard 
-          img="https:links.papareact.com/4cj"
+          img="https://a0.muscache.com/im/pictures/2595054e-d1d9-4fde-8046-58d51fcb3164.jpg?im_w=1440"
           title="The Greatest Outdoors"
           description="Wishlists curated by Airbnb."
           buttonText="Get Inspired"/>
