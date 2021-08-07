@@ -5,7 +5,7 @@ const MediumCard = ({img, title}) => {
             <div className="relative h-80 w-80">
                 <Image
                 src={img}
-                className="rounded-xl"
+                className="rounded-xl hover:animate-pulse"
                 layout='fill' />
         </div> 
         <h3 className='text-2xl mt-3'>{title}</h3>

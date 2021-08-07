@@ -4,9 +4,11 @@ import Footer from '../components/Footer';
 import Header from '../components/Headers'
 import LargeCard from '../components/LargeCard';
 import MediumCard from '../components/MediumCard';
+import Modal from '../components/Modal';
 import SmallCard from '../components/SmallCard';
 
 export default function Home({exploreData, cardsData}) {
+
   return (
     <div className="">
       <Head>
@@ -14,6 +16,7 @@ export default function Home({exploreData, cardsData}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      <Modal />
       <Banner />
       <main className='max-w-7xl mx-auto px-8 sm:px-16'>
         <section className="pt-6">
