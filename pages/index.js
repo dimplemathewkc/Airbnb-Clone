@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { useEffect } from 'react';
 import Banner from '../components/Banner'
 import Footer from '../components/Footer';
 import Header from '../components/Headers'
@@ -6,7 +7,6 @@ import LargeCard from '../components/LargeCard';
 import MediumCard from '../components/MediumCard';
 import Modal from '../components/Modal';
 import SmallCard from '../components/SmallCard';
-
 export default function Home({exploreData, cardsData}) {
 
   return (
@@ -16,7 +16,7 @@ export default function Home({exploreData, cardsData}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <Modal />
+      <Modal />s
       <Banner />
       <main className='max-w-7xl mx-auto px-8 sm:px-16'>
         <section className="pt-6">
