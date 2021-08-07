@@ -56,7 +56,7 @@ const Header = ({placeholder}) => {
                 className="hidden md:inline-flex h-8 bg-red-400 text-white rounded-full p-2 cursor-pointer md:mx-2"/>
             </div>
             <div className="flex items-center justify-end space-x-4 text-gray-500">
-                <p className="hidden md:inline cursor-pointer">Become a host</p>
+                <p className="hidden md:inline cursor-pointer hover:border-b-2">Become a host</p>
                 <GlobeAltIcon className="h-6 cursor-pointer"/>
                 <div className="flex border-2 items-center space-x-2 p-2 rounded-full">
                     <MenuIcon className="h-6"/>
@@ -69,7 +69,8 @@ const Header = ({placeholder}) => {
                     ranges={[selectRange]}
                     minDate={new Date()}
                     rangeColors={["#FD5B61"]}
-                    onChange={handleSelect}/>
+                    onChange={handleSelect}
+                    className="transition duration-500 ease-in-out"/>
                 <div className="flex items-center border-b mb-4">
                     <h2 className="text-2xl flex-grow font-semibold">Number of Guests</h2>
                     <UsersIcon  className="h-5"/>
@@ -81,6 +82,7 @@ const Header = ({placeholder}) => {
                     <button className="flex-grow text-red-400" onClick={search}>Search</button>
                 </div>
                 </div>
+
                 
             )}
         </header> 
