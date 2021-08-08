@@ -52,7 +52,7 @@ const Header = ({placeholder}) => {
             <div className="flex items-center md:border-2 rounded-full py-2 md:shadow-sm mb-2">
                 <input type="text" value={searchInput}
                 className="flex-grow pl-5 bg-transparent outline-none text-sm text-gray-600 placeholder-gray-400" 
-                placeholder={ placeholder?.length >= 20 ? (placeholder?.substring(0,20)+'...'):placeholder || "Start your Search"} onChange={(e) => setSearchInput(e.target.value)} />
+                placeholder={ placeholder?.length >= 20 ? (placeholder.substring(0,20)+'...'):placeholder || "Start your Search"} onChange={(e) => setSearchInput(e.target.value)} />
                 <SearchIcon 
                 className="hidden md:inline-flex h-8 bg-red-400 text-white rounded-full p-2 cursor-pointer md:mx-2"/>
             </div>
