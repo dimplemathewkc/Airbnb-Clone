@@ -58,7 +58,7 @@ const Map = ({searchResult}) => {
                         layout="fill" 
                         objectFit="cover"
                         objectPosition="left"
-                        className="shadow rounded max-w-full h-auto align-middle"/>
+                        className="shadow rounded max-w-full h-auto align-middle bg-gradient-to-b"/>
                           </div>
                        <p className="text-justify text-gray-900 bg-white opacity-80 text-sm top-1 p-2 z-50 mb-1">{result.title}</p>
                       </div>
