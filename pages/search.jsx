@@ -40,7 +40,7 @@ const Search = ({searchResult}) => {
                         
                     </div>
                 </section>
-                <section class="pt-14 pl-1 ml-2 inline-flex min-w-[700px]">
+                <section class="pt-14 pl-1 ml-2 inline-flex min-w-[600px]">
                     <Map searchResult={searchResult} />
                 </section>
             </main>
