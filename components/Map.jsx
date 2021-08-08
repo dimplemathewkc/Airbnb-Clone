@@ -27,7 +27,7 @@ const Map = ({searchResult}) => {
     onViewportChange={(nextViewport => setViewport(nextViewport))}>
       
     {searchResult.map((result) => (
-        <div key={result.long}>
+        <div key={result.long} className="h-24 w-40 md:h-52 md:w-80 flex-shrink-0">
             <Marker
             longitude={result.long}
             latitude={result.lat}
@@ -42,10 +42,12 @@ const Map = ({searchResult}) => {
             {selectedLocation.long === result.long ? (
                 <Popup
                 onClose={()=>setSelectedLocation({})}
-                closeOnClick={true}
+                // closeOnClick={true}
+                closeButton={false}
                 latitude={result.lat}
                 longitude={result.long}
-                className="p-2 items-center z-50 hover:scale-95 transition duration-150 ease-out"
+    
+                className="p-2 items-center z-50 hover:scale-95 transition duration-150 ease-out relative"
                >
                   <div className="relative">
                       <div className="relative flex flex-wrap justify-center">
@@ -56,9 +58,9 @@ const Map = ({searchResult}) => {
                         objectPosition="left"
                         className="shadow rounded max-w-full h-auto align-middle"/>
                           </div>
-                       
+                       <p className="text-justify text-gray-900 bg-white opacity-80 text-sm top-1 p-2 z-50 mb-1">{result.title}</p>
                       </div>
-                 <p className="text-justify text-gray-500 text-sm">{result.title}</p>
+                 
                </div> 
                 
                    
