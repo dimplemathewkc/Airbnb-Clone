@@ -40,7 +40,7 @@ const Header = ({placeholder}) => {
     
 
     return ( 
-        <header className="sticky top-0 z-30 grid grid-cols-3 backdrop-blur bg-opacity-50  p-5 mb-5 md:px-10">
+        <header className="sticky top-0 z-30 grid grid-cols-3 backdrop-blur bg-opacity-50  p-5 mb-6 md:px-10">
             {/* left */}
             <div onClick = {() => router.push("/")}className="relative flex items-center h-10 cursor-pointer my-auto"> 
                 <Image src="https://links.papareact.com/qd3"
@@ -79,8 +79,8 @@ const Header = ({placeholder}) => {
                     className="w-12 pl-2 text-lg outline-none text-red-400" onChange={(e) => setNumberOfGuest(e.target.value)}/>
                 </div>
                 <div className="flex mb-2">
-                    <button className="flex-grow text-gray-500 hover:rounded-2xl hover:bg-gray-500 font-semibold hover:bg-opacity-20" onClick={()=>setSearchInput('')}>Cancel</button>
-                    <button className="flex-grow text-red-400  hover:rounded-2xl hover:bg-red-400 font-semibold hover:bg-opacity-20" onClick={search}>Search</button>
+                    <button className="flex-grow text-gray-500 hover:rounded-2xl hover:bg-gray-500 font-semibold hover:bg-opacity-20 pt-1 pb-1" onClick={()=>setSearchInput('')}>Cancel</button>
+                    <button className="flex-grow text-red-400  hover:rounded-2xl hover:bg-red-400 font-semibold hover:bg-opacity-20 pt-1 pb-1" onClick={search}>Search</button>
                 </div>
                 </div>
 
