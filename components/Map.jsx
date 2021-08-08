@@ -24,7 +24,9 @@ const Map = ({searchResult}) => {
     mapStyle="mapbox://styles/dimplemathew/cks0i6wzo0tz317q62x6pn8wg"
     mapboxApiAccessToken={process.env.mapbox_key}
     {...viewport}
-    onViewportChange={(nextViewport => setViewport(nextViewport))}>
+    onViewportChange={(nextViewport => setViewport(nextViewport))}
+    className="rounded-md"
+    >
       
     {searchResult.map((result) => (
         <div key={result.long} className="h-24 w-40 md:h-52 md:w-80 flex-shrink-0">
