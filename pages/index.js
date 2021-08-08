@@ -16,7 +16,7 @@ export default function Home({exploreData, cardsData}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <Modal />s
+      <Modal />
       <Banner />
       <main className='max-w-7xl mx-auto px-8 sm:px-16'>
         <section className="pt-6">

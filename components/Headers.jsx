@@ -40,7 +40,7 @@ const Header = ({placeholder}) => {
     
 
     return ( 
-        <header className="sticky top-0 z-30 grid grid-cols-3 backdrop-blur bg-opacity-50  p-5 md:px-10">
+        <header className="sticky top-0 z-30 grid grid-cols-3 backdrop-blur bg-opacity-50  p-5 mb-5 md:px-10">
             {/* left */}
             <div onClick = {() => router.push("/")}className="relative flex items-center h-10 cursor-pointer my-auto"> 
                 <Image src="https://links.papareact.com/qd3"
